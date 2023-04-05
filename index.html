@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PORTFOLIO2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+       
+  
+}
+
+/* Style the header */
+#header {
+  background-image: url('https://ik.imagekit.io/vdhj3qmal/gradient6.png?updatedAt=1680680437049');
+  padding: 20px;
+  text-align: center;
+  color:black
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow:hidden;
+  background-color: #172129;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f6efef;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ace0f4;
+  color: rgb(13, 13, 13);
+  transition-duration: 0.5s;
+}
+.MYB3 {
+    background-color:rgb(44, 42, 42);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:"Lucida Sans";
+    font-size: 20px;  
+    border-radius: 10px;
+    position:absolute;
+    left:0.5em;
+    top:10em;
+    transition-duration: 0.4s;
+
+  }
+  .MYB3:hover{
+    background-color: rgb(0, 139, 58);
+  }
+  #on{
+    background-color:rgb(44, 42, 42);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:"Lucida Sans";
+    font-size: 20px;  
+    border-radius: 10px;
+    position:absolute;
+    left:38em;
+    bottom:14em;
+    transition-duration: 0.4s;
+
+  }
+  #on:hover{
+    background-color: rgb(0, 139, 58);
+  }
+
+  #toggle-slideshow{
+    background-color:rgb(44, 42, 42);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:"Lucida Sans";
+    font-size: 20px;  
+    border-radius: 10px;
+    position:absolute;
+    left:39em;
+    bottom:-12em;
+    transition-duration: 0.4s;
+
+  }
+  #toggle-slideshow:hover{
+    background-color: rgb(0, 139, 58);
+  }
+
+  .MYB3:hover{
+    background-color: rgb(0, 139, 58);
+  }
+
+  #area{
+    width:10em;
+    background-color: rgba(22, 105, 50, 0.301);
+    padding : 2em;
+    position: relative ;
+    transform:translate(110%,35%) ;
+    color:rgb(236, 198, 151) ;
+    font-family: 'Gill Sans MT';
+    font-size: larger;
+    position:absolute;
+    left:30em;
+    top: 8em;
+
+  }
+  div.desc{
+    width:10em;
+    background-color: rgba(22, 105, 50, 0.301);
+    padding : 2em;
+    position: relative ;
+    transform:translate(110%,35%) ;
+    color:rgb(236, 198, 151) ;
+    font-family: 'Gill Sans MT';
+    font-size: larger;
+    position:absolute;
+    left:-10em;
+    top:9em;  
+
+  }
+  #me{
+
+    position:absolute;
+    left:17em;
+    top:12em;
+    max-width:28em;
+    padding:50px;
+    background-color: rgb(12, 11, 11);
+    }
+    #gif{
+    max-width:25em;
+    height:auto;
+    position:absolute;
+    left:-1em;
+    top:81em;
+    
+  }
+  #arrow{
+    max-width:7em;
+    height:auto;
+    position:absolute;
+    left:27em;
+    top:88em;
+  } 
+  
+  label[for="name"] {
+  color: rgb(118, 118, 242);
+  position:absolute;
+  left:5em;
+  top:3.5em;
+  font-size: 20px;
+}
+label[for="email"] {
+  color: rgb(118, 118, 242);
+  position:absolute;
+  left:19em;
+  top:3.5em;
+  font-size: 20px;
+}
+label[for="message"] {
+  color: rgb(118, 118, 242);
+  position:absolute;
+  left:15em;
+  top:7em;
+  font-size: 20px;
+}
+#message{
+  position:absolute;
+  left:19em;
+  top:13em;
+  background-color: rgb(42, 38, 38);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  border-radius: 10px;
+  color:bisque;
+  block-size: 7em;
+}
+#submit{
+  position:absolute;
+  left:16em;
+  top:15em;
+  background-color: rgb(42, 38, 38);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  font-size: 20px;  
+  border-radius: 10px;
+  color:bisque;
+  transition-duration: 0.4s;
+}
+#submit:hover{
+  background-color: rgb(0, 139, 58);
+}
+input[type = "text"]{
+  position:absolute;
+  left:12em;
+  top:5em;
+  background-color: rgb(42, 38, 38);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  font-size: 13px;  
+  border-radius: 10px;
+  color:bisque;
+}
+#email{
+  position:absolute;
+  left:35em;
+  top:5em;
+  background-color: rgb(42, 38, 38);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  font-size:13px;  
+  border-radius: 10px;
+  color:bisque;
+}
+textarea {
+  width: 19em;
+  height: 5em;
+}
+#form{
+  position: absolute;
+  left:19em;
+  top:77em;
+}
+#home{
+  background-color: rgb(42, 38, 38);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  font-size: 20px;  
+  border-radius: 10px;
+  color:bisque;
+  transition-duration: 0.4s;
+    position:absolute;
+    left:40em;
+    bottom:-52.9em;
+    transition-duration: 0.4s;
+
+  }
+  #home:hover{
+  background-color: rgb(0, 139, 58);
+} 
+ 
+.mySlide1{
+    position: absolute;
+    width:40em;
+    height:25em;
+    left:22em;
+    bottom:-43em;    
+}
+.mySlide2{
+    position: absolute;
+    width:20em;
+    height:12em;
+    left:1em;
+    bottom:-30em;    
+}
+.mySlide3{
+    position: absolute;
+    width:20em;
+    height:12em;
+    left:1em;
+    bottom:-43em;    
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class = 'desc'>
+    Interested in working with me or finding out how I 
+        can help you with your next project? </h7>   
+    
+       </div>
+<div id="header">
+  <h1>Data Analyst, Rachael Kibicho </h1>
+</div>
+
+<div class="topnav">
+ 
+  <a onclick="scrollToSection3()"><b>ABOUT</b></a>
+
+  
+</div>
+<a class="MYB3"  onclick="scrollToSection()">CONNECT WITH ME</a>
+<img  id = "me" src="https://ik.imagekit.io/vdhj3qmal/me1.jpg?updatedAt=1680546130802" alt="A picture of me">
+<img  id = "gif" src="https://ik.imagekit.io/vdhj3qmal/spongebobGIF.gif?updatedAt=1680546132449" alt="Spongebob thinking" >
+<img  id = "arrow" src="https://ik.imagekit.io/vdhj3qmal/arrow.jpeg?updatedAt=1680546121712" alt="An arrow">
+<form id="form" action="https://getform.io/f/b1e98985-fbe0-4542-8e32-c0fb10495ff0"
+method = "post" enctype = "multipart/form-data">
+  <h2 style = "color: rgb(118, 118, 242);  ">Send me a message:</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your First Name" required>
+
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+  <label for="message">MESSAGE:</label>
+  <input id="message" name="message" rows = 4 placeholder="How can I help YOU?"required></input>
+  
+  <input id ="submit" type="submit" value="Submit">
+ 
+</form>
+<script type="text/javascript">
+    function tend() {
+      document.getElementById('resume').style.visibility='visible';
+    }
+    function tn() {
+      document.getElementById('resume').style.visibility='hidden';
+    }
+    document.getElementById("form").addEventListener("submit", function() {
+  // get all the inputs in the form
+  var inputs = document.getElementById("form").getElementsByTagName("input");
+  
+  // loop through the inputs and clear their values
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].value = "";
+  }
+});
+function scrollToSection() {
+  var section = document.getElementById("form");
+  var position = section.offsetTop;
+  window.scrollTo({
+    top: position,
+    behavior: "smooth"
+  });
+}
+function scrollToSection1() {
+  var section = document.getElementById("header");
+  var position = section.offsetTop;
+  window.scrollTo({
+    top: position,
+    behavior: "smooth"
+  });
+}
+function scrollToSection2() {
+  var section = document.getElementById("toggle-slideshow");
+  var position = section.offsetTop;
+  window.scrollTo({
+    top: position,
+    behavior: "smooth"
+  });
+}
+function scrollToSection3() {
+  var section = document.getElementById("introAbout");
+  var position = section.offsetTop;
+  window.scrollTo({
+    top: position,
+    behavior: "smooth"
+  });
+}
+function scrollToSection4() {
+  var section = document.getElementById("background");
+  var position = section.offsetTop;
+  window.scrollTo({
+    top: position,
+    behavior: "smooth"
+  });
+}
+function scrollToSection5() {
+  var section = document.getElementById("recentWork");
+  var position = section.offsetTop;
+  window.scrollTo({
+    top: position,
+    behavior: "smooth"
+  });
+}
+
+
+
+
+  </script>
+  <a id="on"  onclick="scrollToSection2()">SHOW FAVORITE QUOTES</a>
+  <a id="toggle-slideshow" onclick="scrollToSection1()">BACK</a>
+  <div class="slideshow-container">
+    <img src="https://ik.imagekit.io/vdhj3qmal/danDataQuote.jpg?updatedAt=1680546121622" class = "mySlide1">
+    <img src="https://ik.imagekit.io/vdhj3qmal/charlesQuote.jpeg?updatedAt=1680546120321it.io/vdhj3qmal/danDataQuote.jpg?updatedAt=1680546121622" class="mySlide2">
+    <img src="https://ik.imagekit.io/vdhj3qmal/hillaryQuote.jpeg?updatedAt=1680546121799" class="mySlide3">
+  </div>
+  <a id="home" onclick="scrollToSection1()">Back</a>
+  <div id="area">Check out some of the great minds and the quotes that have inspired me to join in building the world of data.</div>
+  <script>
+    const button = document.getElementById("text");
+    const text = document.getElementById("area");
+    button.addEventListener("click", function() {
+      text.innerHTML = "Hello, World!";
+    });
+  </script>
+  <!--portfolio1 content-->
+  <!-- below-->
+  <!-- -->
+  
+
+    <p  id = "introAbout" style = "font-family :monospace;color:rgb(227, 236, 131);font-size:20px;"><u >Hi, I am Rachael Kibicho, your Data Analyst</u></p>    
+    <a class= MYB1About onclick ="scrollToSection5()" >MY RECENT WORK</a>
+    <a class = 'MYB2About' onclick="scrollToSection4()" >MY BACKGROUND</a>
+    <a class="MYB3About" onclick="scrollToSection1()"> HOME</a>
+    
+  
+    <img  id = "meAbout" src="https://ik.imagekit.io/vdhj3qmal/me1.jpg?updatedAt=1680546130802" alt=" me">
+    <style>
+    .MYB1About {
+      background-color:rgb(43, 45, 44);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      font-family:"Lucida Sans";
+      font-size: 20px;  
+      border-radius: 10px;
+      position:absolute;
+      left:0%;
+      top:117em;
+      transition-duration: 0.4s;
+  
+    }
+    .MYB1About:hover{
+      background-color: rgb(0, 139, 58);
+    }
+    .MYB2About {
+     
+      background-color:rgb(45, 43, 43);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      font-family:"Lucida Sans";
+      font-size: 20px;  
+      border-radius: 10px;
+      position:absolute;
+      left:0%;
+      top:132.5em;
+      transition-duration: 0.4s;
+  
+    }
+    .MYB2About:hover{
+      background-color: rgb(0, 139, 58);
+    }
+    .MYB3About {
+      background-color:rgb(44, 42, 42);
+      color: white;
+      border: none;
+      padding: 10px ;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      font-family:"Lucida Sans";
+      font-size: 20px;  
+      border-radius: 10px;
+      position:absolute;
+      left:13.5em;
+      top:126em;
+      transition-duration: 0.4s;
+  
+    }
+    .MYB3About:hover{
+      background-color: rgb(0, 139, 58);
+    }
+    .MYB4About {
+      background-color:rgb(35, 34, 34);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      font-family:"Lucida Sans";
+      font-size: 20px;  
+      border-radius: 10px;
+      position:absolute;
+      top:120em;
+  
+      transition-duration: 0.4s;
+  
+    }
+    .MYBAbout4:hover{
+      background-color: rgb(0, 139, 58);
+    }
+
+    
+    div.descAbout{
+      width:10em;
+      background-color: rgba(22, 105, 50, 0.301);
+      padding : 30px;
+      position: relative ;
+      transform:translate(110%,35%) ;
+      color:rgb(236, 198, 151) ;
+      font-family: 'Gill Sans MT';
+      font-size:medium ;
+      position:absolute;
+      left:5em;
+      top:158.5em;  
+  
+    } 
+  
+    #meAbout{
+  
+      position:absolute;
+      left:28em;
+      top:145em;
+      max-width:30em;
+       
+      padding:50px;
+      background-color: rgb(12, 11, 11);
+    }  
+    #gifAbout{
+      max-width:25em;
+      height:auto;
+      position:absolute;
+      left:-1em;
+      top:72em;
+      
+    }
+
+
+    div.recentAbout{
+      width:15em;
+      background-color: rgba(22, 105, 50, 0.301);
+      padding : 50px;
+      position: relative;
+      left:0%;
+      top:139em;
+      color:rgb(236, 198, 151) ;
+      font-family: 'Gill Sans MT';
+      font-size:medium;
+  
+    }
+    div.bgAbout{
+      width:20em;
+      max-height: 0em;
+      background-color: rgba(22, 105, 50, 0.301);
+      padding : 50px;
+      position: relative ;
+      left:0%;
+      top: 142.5em;
+      color:rgb(236, 198, 151) ;
+      font-family: 'Gill Sans MT';
+      font-size: medium;
+  
+    } 
+    #introAbout{
+      position:absolute;
+      left:0em;
+      top:110em;       
+    }
+    #background{
+      position: absolute;
+      left:0em;
+      top:280em;
+    }
+    #recentWork{
+      position: absolute;
+      left:0em;
+      top:380em;
+    }
+
+    
+
+
+  
+  
+   
+  
+    
+  
+  
+    
+    </style>
+    
+      <div class = 'descAbout'><h7>
+  Go back to the original page</h7>   
+   
+      </div>
+      <div class = 'recentAbout'><h7>
+        Check out my latest project! Using Python I have created a program that 
+        enable analysis of the statistics collected in the world cup results of 2018. 
+      </h4>
+  
+      </div>
+      <div class = 'bgAbout'><h7>
+        Learn about how I honed the skills I have.
+      </h7>
+  
+      </div>
+      <p  id = "introAbout1" style = "font-family :monospace;color:rgb(228, 236, 141);font-size: 20px; position:absolute; top:112em;">
+        Data Science is my craft that I use to enhance my life,
+        as well as the lives of my family and friends.I am a data engineer with determination to discover creative ideas and solve complex problems using data . </p> 
+      <!--Div for BACKGROUND-->
+      <!--Div for BACKGROUND-->
+      <!--Div for BACKGROUND-->
+      <!--Div for BACKGROUND-->
+      <div id = "background">
+      <H2 class = 'title'>MY BACKGROUND</H2>
+      <p><H3>At a young age I was interested in numbers and dabbled in problem solving games.
+           At the end of my highschool education, my brother introduced me to programming 
+          particularly with tools like python and I found it especially useful with data handling.
+          With the recent emergence of Artificial Intelligence at the time, I was altogether excited
+          about all the possibilities that data analysis skills could unlock and the journey only got 
+          more interesting from there.</h3>
+      
+        </p>
+        <p><h3> On entering campus in Kenyatta University, there was an incredible community for
+          student coding and I was all in from the get go. There were many activities that were facilitated by various 
+      student clubs for example coding hackathons and peer group teaching in Google Developers Students Club. Activities
+       in Chandaria Business building have also driven me toward innovative ventures and is encouraging me and my peers to 
+      create software that is unique and original.</h3></p>
+        <img src="https://ik.imagekit.io/vdhj3qmal/black_girl_coding.jpg?updatedAt=1680546121973" alt="A lady coding">
+        <a class = 'MYB2' onclick="scrollToSection3()" >Back</a>
+        <p><H3>A few of the programming languages I have been learning to use as programming tools are:<ol type="I"><li>Python</li><li>Java</li><li>C and C++ </li>
+          <li>HTML</li><li>JavaScript</li><li>CSS</li><li>PHP</li><li>SQL</li>
+        </ol></p>
+        <table >
+          <tr>
+            <th>
+              Institution of Study
+            </th>
+            <th>
+              Course of Study
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Kiguru Primary School
+            </td>
+            <td>
+              Primary School Education
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Limuru Girls School
+            </td>
+            <td>
+              Secondary School Education
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Moringa School
+            </td>
+            <td>
+              Data Science
+            </td>
+          </tr>
+          
+      
+        </table>
+        <style>
+          body{
+              
+              font-family:Georgia ;    
+              background-repeat: repeat-x;
+              background-size: cover;
+              color: rgb(219, 227, 104);
+      
+          }
+          .MYB2 {
+         
+          background-color:rgb(61, 59, 59);
+          color: white;
+         border: none;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: solid;
+         display: inline-block;
+         font-size: x-large ;
+         cursor: pointer;
+         font-family:"Lucida Sans";
+         position: relative;
+         top: -15em;
+         right: -1em;
+      
+         border-radius: 200px;
+         transition-duration: 0.4s;
+      
+        }
+        .MYB2:hover{
+          background-color: rgb(0, 139, 58);
+        }
+        table, th, td {
+        border: 1px solid rgb(240, 235, 235);
+        }                     
+                
+        </style>
+      </div>
+      <!--divrecentwork-->
+      <!--divrecentwork-->
+      <!--divrecentwork-->
+      <div id="recentWork" >
+        <a class= 'MYB3Recent'  href = "https://github.com/Rachael-Kibicho/summaryDataAnalysisBasePython/blob/main/index.ipynb" >View my work on GIT</a>
+<p  id = "intro" style = "font-family :monospace;font-size: 30px;"><u ><b>MY RECENT WORK</b></u></p>
+<a class = 'MYB2Recent' onclick="scrollToSection3()" >Back</a>
+<style>
+    .MYB2Recent {
+   
+   background-color:rgb(25, 24, 24);
+   color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: x-large ;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  position: relative;
+  top:11em;
+  right: -1em;
+  
+  border-radius: 200px;
+  transition-duration: 0.4s;
+
+ }
+ .MYB2Recent:hover{
+   background-color: rgb(0, 139, 58);
+ }
+ .MYB3Recent {
+   
+   background-color:rgb(25, 24, 24);
+   color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: x-large ;
+  cursor: pointer;
+  font-family:"Lucida Sans";
+  position: relative;
+  top:17em;
+  right: -6em;
+  border-radius: 200px;
+  transition-duration: 0.4s;
+
+ }
+ .MYB3Recent:hover{
+   background-color: rgb(0, 139, 58);
+ }
+ BODY{
+        
+        font-family:Georgia ;    
+        background-repeat: repeat-x;
+        background-size: cover;
+        color: rgb(219, 227, 104);
+
+    }
+</style>
+<H8><p  id = "intro" style = "font-family :monospace;font-size: 20px;">    I have been using 2018 FIFA World Cup results to find the relationship between
+    the population of a country and their performance in the 2018 FIFA World Cup.Intuitively, we might assume that countries with larger populations would have better performance
+    in international sports competitions. While this has been demonstrated to be true for the Olympics, the results
+    for the FIFA World Cup are more mixed.</p></H8>
+
+      </div>
+  
+      
+</body>
+</html>
+
+
